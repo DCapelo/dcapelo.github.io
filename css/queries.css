@@ -10,11 +10,12 @@
 }
 @media screen and (max-width:991px) {
     .download-now {
-        background: #bbb0aa;
+        background: #cfa66a;
         background-image: none;
     }
 	.features-leftcol { border: none; padding: 0 0 0 20px; }
 	.features-rightcol { padding: 0 0 0 20px; }
 	.margin-bottom { margin-bottom: 0; }
 	.features p { margin-bottom: 50px; }
+    .avatar {width:150px}
 }
