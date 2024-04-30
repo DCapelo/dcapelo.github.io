@@ -4,9 +4,19 @@
 }
 /* For iphone: */
 @media screen and (max-width:320px) {
+    .avatar {
+        width: 100px;
+    }
+    .responsive {
+        width: 100%;
+    }
 }
 /* For ipad: */
 @media screen and (max-width:760px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
 }
 @media screen and (max-width:991px) {
     .download-now {
@@ -17,5 +27,5 @@
 	.features-rightcol { padding: 0 0 0 20px; }
 	.margin-bottom { margin-bottom: 0; }
 	.features p { margin-bottom: 50px; }
-    .avatar {width:150px}
+    .avatar {width: 150px;}
 }

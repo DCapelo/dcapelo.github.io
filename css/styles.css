@@ -311,4 +311,23 @@ Social Media
 .avatar {
     width: 175px;
 }
+/* ==========================================================================
+Image Gallery
+========================================================================== */
 
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
