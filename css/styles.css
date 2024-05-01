@@ -224,7 +224,7 @@ nav ul li a:hover, nav ul li a:focus { color: rgba(255, 255, 255, 1); text-decor
 .colour3 { background-color: #7accc8; }
 .colour4 { background-color: #373b44; }
 .title { font-size: 15px; color: #9197a8; text-transform: uppercase; font-weight: 600; letter-spacing: 2px; padding: 20px 40px 0; }
-.feature-text { padding: 0px 20px 40px 40px; font-style: italic; color: #7a8387; font-size: 16px; }
+.feature-text { padding: 0px 20px 20px 20px; font-style: italic; color: #7a8387; font-size: 16px; }
 .design-content p { color: #abbcc3; line-height: 30px; font-weight: 300; }
 .controls a { color: #959595; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
 .controls a:hover, .controls a:focus { color: #555555; }
