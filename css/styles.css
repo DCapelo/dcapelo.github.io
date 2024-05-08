@@ -216,8 +216,7 @@ nav ul li a:hover, nav ul li a:focus { color: rgba(255, 255, 255, 1); text-decor
 .features p { color: #7a8387; font-size: 16px; word-spacing: 2px; line-height: 20px; }
 .features-leftcol { border-right: 1px solid rgba(208, 217, 226, 0.4); padding-right: 60px; }
 .features-rightcol { padding-left: 60px; }
-.features .title {
-    font-size: 15px;
+.features-title {
     color: #9197a8;
     text-transform: uppercase;
     font-weight: 600;
