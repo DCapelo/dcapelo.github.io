@@ -223,8 +223,7 @@ nav ul li a:hover, nav ul li a:focus { color: rgba(255, 255, 255, 1); text-decor
     font-weight: 600;
     letter-spacing: 2px;
 }
-.features .datetime {
-    font-size: 15px;
+.features-datetime {
     color: #f69679;
     letter-spacing: 1px;
 }
