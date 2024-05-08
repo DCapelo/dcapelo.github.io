@@ -183,8 +183,12 @@ Headings
 .hero h1 { font-size: 60px; font-weight: 100; color: #fff; letter-spacing: -1px; margin: 100px 0 20px 0; }
 .download-now h1 { font-size: 55px; font-weight: 100; color: #fff; margin: 100px 0 20px 0; }
 .testimonials h1 { color: #fff; font-size: 43px; font-weight: 100; margin: 20px 0 80px 0; font-style: italic; }
-.features h1 { color: #9197a8; font-size: 15px; margin: 0 0 20px 0; text-transform: uppercase; }
-.design h1 { color: #abbcc3; font-size: 38px; font-weight: 300; margin-top: 0; }
+.design h1, .features h1 {
+    color: #abbcc3;
+    font-size: 38px;
+    font-weight: 300;
+    margin-top: 0;
+}
 /* ==========================================================================
 Custom Styles
 ========================================================================== */
@@ -209,11 +213,23 @@ nav ul li a:hover, nav ul li a:focus { color: rgba(255, 255, 255, 1); text-decor
 .download-btn:hover, .download-btn:focus { text-decoration: none; border-color: #a58347; color: #a58347; }
 .testimonials { background: #5b6869 url('../img/tBG01.jpg') no-repeat left center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 130px 0; }
 .features { background: #fff url('../img/arrowBG.png') no-repeat center -1px; padding: 70px 0; }
-.features p { color: #7a8387; font-size: 16px; word-spacing: 2px; line-height: 30px; }
+.features p { color: #7a8387; font-size: 16px; word-spacing: 2px; line-height: 20px; }
 .features-leftcol { border-right: 1px solid rgba(208, 217, 226, 0.4); padding-right: 60px; }
 .features-rightcol { padding-left: 60px; }
+.features .title {
+    font-size: 15px;
+    color: #9197a8;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.features .datetime {
+    font-size: 15px;
+    color: #f69679;
+    letter-spacing: 1px;
+}
 .margin-bottom { margin-bottom: 70px; }
-.try-btn { background-color: #f69679; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-size: 17px; color: #fff; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; display: inline-block; padding: 15px 50px; margin: 70px 0 70px; }
+.try-btn { background-color: #f69679; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-size: 17px; color: #fff; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; display: inline-block; padding: 15px 50px; margin: 0 0 50px; }
 .try-btn:hover, .try-btn:focus { background-color: #e37857; color: #fff; text-decoration: none; }
 .design { padding: 100px 0; background-color: #f6f6f4; position: relative; }
 .flat-box { background-color: #fff; -webkit-box-shadow: 0px 3px 0px 0px rgba(234, 234, 234, 1); -moz-box-shadow: 0px 3px 0px 0px rgba(234, 234, 234, 1); box-shadow: 0px 3px 0px 0px rgba(234, 234, 234, 1); transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
@@ -224,12 +240,13 @@ nav ul li a:hover, nav ul li a:focus { color: rgba(255, 255, 255, 1); text-decor
 .colour3 { background-color: #7accc8; }
 .colour4 { background-color: #373b44; }
 .title { font-size: 15px; color: #9197a8; text-transform: uppercase; font-weight: 600; letter-spacing: 2px; padding: 20px 40px 0; }
-.feature-text { padding: 0px 20px 20px 20px; font-style: italic; color: #7a8387; font-size: 16px; }
+.feature-text { font-style: italic; color: #7a8387; font-size: 16px; }
 .design-content p { color: #abbcc3; line-height: 30px; font-weight: 300; }
 .controls a { color: #959595; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
 .controls a:hover, .controls a:focus { color: #555555; }
 .controls .prev { margin-right: 5px; }
 footer { background-color: #7accc8; padding: 75px 0 220px; }
+footer p { color: #fff; line-height: 30px; }
 footer p { color: #fff; line-height: 30px; }
 .footer-nav { list-style: none; padding: 0; }
 .footer-nav li a { display: block; color: #fff; padding: 5px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
