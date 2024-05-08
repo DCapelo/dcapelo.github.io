@@ -36,19 +36,19 @@ $(document).ready(function() {
   $('.wp1').waypoint(function() {
     $('.wp1').addClass('animated fadeInUp');
   }, {
-    offset: '75%'
+    offset: '50%'
   });
 
   $('.wp2').waypoint(function() {
     $('.wp2').addClass('animated fadeInUp');
   }, {
-    offset: '75%'
+    offset: '50%'
   });
 
   $('.wp3').waypoint(function() {
     $('.wp3').addClass('animated fadeInUpD');
   }, {
-    offset: '75%'
+    offset: '50%'
   });
 
 });
