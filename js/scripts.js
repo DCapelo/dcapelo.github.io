@@ -66,8 +66,8 @@ $(function() {
         return false;
       }
     }
-    });
     $('.nav_slide_button').trigger("click");
+  });
 });
 // fancyBox
 $(document).ready(function() {
