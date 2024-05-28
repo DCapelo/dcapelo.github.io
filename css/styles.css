@@ -364,7 +364,7 @@ form {
     padding: 1rem 0;
 }
 
-input, textarea, label {
+input, textarea {
     width: 40vw;
     display: block;
     background-color: #fff;
