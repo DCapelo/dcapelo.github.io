@@ -180,7 +180,7 @@ Clearfix
 Headings
 ========================================================================== */
 
-.hero h1 { font-size: 60px; font-weight: 100; color: #fff; letter-spacing: -1px; margin: 100px 0 20px 0; }
+.hero h1, .footer h1 { font-size: 60px; font-weight: 100; color: #fff; letter-spacing: -1px; margin: 100px 0 20px 0; }
 .download-now h1 { font-size: 55px; font-weight: 100; color: #fff; margin: 100px 0 20px 0; }
 .testimonials h1 { color: #fff; font-size: 43px; font-weight: 100; margin: 20px 0 80px 0; font-style: italic; }
 .design h1, .features h1 {
@@ -352,9 +352,9 @@ Contact form
 ========================================================================== */
 
 label, .description {
-    color: var(--secondary-color);
+    color: #fff;
     text-transform: uppercase;
-    font-size: 0.625rem;
+    font-size: 16px;
 }
 
 form {
@@ -367,44 +367,20 @@ form {
 input, textarea, label {
     width: 40vw;
     display: block;
-}
-
-p, placeholder, input, textarea {
-    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fff;
 }
 
 input, textarea {
-    color: var(--primary-color);
-    font-weight: 500;
-    background: var(--bg-color);
+    background: #fff;
     border: none;
-    border-bottom: 1px solid var(--secondary-color);
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
     margin-bottom: 1rem;
     outline: none;
+    border-radius: 3px;
+    font-size: 16px;
 }
 
 textarea {
     resize: none;
 }
 
-button {
-    text-transform: uppercase;
-    font-weight: 300;
-    background: var(--button-color);
-    color: var(--bg-color);
-    width: 10rem;
-    height: 2.25rem;
-    border: none;
-    border-radius: 2px;
-    outline: none;
-    cursor: pointer;
-}
-
-input:hover, textarea:hover, button:hover {
-    opacity: 0.5;
-}
-
-button:active {
-    opacity: 0.8;
-}
