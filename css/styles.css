@@ -358,7 +358,7 @@ label, .description {
 }
 
 input, textarea {
-    width: 40vw;
+    width: 50vw;
     display: block;
     background-color: #fff;
 }

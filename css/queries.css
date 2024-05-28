@@ -10,12 +10,18 @@
     .responsive {
         width: 100%;
     }
+    input, textarea {
+        width: 80vw;
+    }
 }
 /* For ipad: */
 @media screen and (max-width:760px) {
     .responsive {
         width: 49.99999%;
         margin: 6px 0;
+    }
+    input, textarea {
+        width: 65vw;
     }
 }
 @media screen and (max-width:991px) {
