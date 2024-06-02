@@ -133,7 +133,7 @@ const emailIsValid = email => {
 }
 
 // Calendar scripts
-const icsUrl = 'https://calendar.google.com/calendar/ical/en.usa%23holiday%40group.v.calendar.google.com/public/basic.ics';
+const icsUrl = 'https://calendar.google.com/calendar/ical/8eb96a10ddb00fe5dacf9e22cc0aad11d27117c35427e7e82f5246a473189670%40group.calendar.google.com/public/basic.ics';
 
 function createEvent(title, datetime, address, description) {
     // Create elements
