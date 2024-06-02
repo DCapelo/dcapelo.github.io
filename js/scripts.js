@@ -131,3 +131,60 @@ const validate = (e) => {
 const emailIsValid = email => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+
+// Calendar scripts
+const icsUrl = 'https://calendar.google.com/calendar/ical/en.usa%23holiday%40group.v.calendar.google.com/public/basic.ics';
+
+function createEvent(title, datetime, address, description) {
+    // Create elements
+    var eventTitle = $('<p>').addClass('features-title').text(title);
+    var eventDatetime = $('<p>').addClass('features-datetime').text(datetime);
+    var eventAddress = $('<p>').addClass('feature-text').text(address);
+    var eventDescription = $('<p>').addClass('feature-text').text(description);
+    var moreInfoLink = $('<a>').addClass('try-btn').attr('href', '#').text('More info');
+    var moreInfoButton = $('<div>').addClass('col-md-12 text-center').append(moreInfoLink);
+
+    // Create event container and append elements
+    var eventContainer = $('<div>').addClass('event-container')
+        .append(eventTitle)
+        .append(eventDatetime)
+        .append(eventAddress)
+        .append(eventDescription)
+        .append(moreInfoButton);
+
+    // Append event container to the document
+    $('#left-event-container').append(eventContainer);
+}
+
+$(document).ready(function () {   
+    // Fetch the ICS feed
+    fetch(icsUrl)
+        .then(response => response.text())
+        .then(data => {
+            // Parse the ICS data with the ical.js plugin
+            const jcalData = ICAL.parse(data);
+            const comp = new ICAL.Component(jcalData);
+            const vevents = comp.getAllProperties('vevent');
+
+            // Iterate through each event
+            vevents.forEach(e => {
+                // Extract event details
+                const title = e.getFirstPropertyValue('description');
+                const summary = e.getFirstPropertyValue('summary');
+                const location = e.getFirstPropertyValue('location');
+                const startDate = e.getFirstPropertyValue('dtstart').toJSDate();
+                const endDate = e.getFirstPropertyValue('dtend').toJSDate();
+
+                // Do something with event details (e.g., display on webpage)
+                createEvent(
+                    title,
+                    startDate,
+                    location,
+                    summary
+                );
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching or parsing ICS feed:', error);
+        });
+});
